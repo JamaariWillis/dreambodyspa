@@ -100,3 +100,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var hero = document.querySelector('.hero');
+
+    function handleScroll() {
+        // Get the scroll position
+        var scrollPosition = window.scrollY || window.pageYOffset;
+
+        // Calculate the opacity based on the scroll position
+        var opacity = 1 - Math.min(1, scrollPosition / (hero.offsetHeight * 0.8));
+
+        // Set the opacity of the hero element
+        hero.style.opacity = opacity.toFixed(2);
+    }
+
+    // Attach the handleScroll function to the scroll event
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial check on page load
+    handleScroll();
+});

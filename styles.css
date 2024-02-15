@@ -342,7 +342,7 @@ body, ul {
       right: 0px;
       width: 30%;
       height: 90px;
-      background-color: #06151f;
+      background-color: #06151f00;
       text-align: center;
       z-index: 1;
   }
@@ -472,7 +472,7 @@ body, ul {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #040E14;
+        background-color: #ffffff;
       
         }
       
@@ -485,7 +485,7 @@ body, ul {
         .row {
         display: flex;
         font-family: 'Raleway', sans-serif;
-        font-size: 17px;
+        font-size: 15px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -493,7 +493,7 @@ body, ul {
         color:#06151f;
         height: 90vh;;
         background-color: #fff;
-        padding: 0px 0px 80px 0px;
+        padding: 0px 30px 60px 30px;
         }
       
         .slim1 {

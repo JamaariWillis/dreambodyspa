@@ -106,7 +106,7 @@ body, ul {
   }
   
   .hero-cover {
-    background-color: #03030373;
+    background-color: #0303034b;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -342,7 +342,7 @@ body, ul {
       right: 0px;
       width: 30%;
       height: 90px;
-      background-color: #fff;
+      background-color: #06151f;
       text-align: center;
       z-index: 1;
   }
@@ -352,7 +352,7 @@ body, ul {
   }
   
   menu, a {
-      color: #fff;
+      color: #ffffff;
       text-decoration: none;
      
   }
@@ -414,7 +414,7 @@ body, ul {
     }
     
     .hero-cover {
-      background-color: #03030373;
+      background-color: #03030354;
       height: 100vh;
       display: flex;
       flex-direction: column;

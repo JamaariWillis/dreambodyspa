@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function calculateOpacity(element) {
         var rect = element.getBoundingClientRect();
         var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-        var center = windowHeight / 2;
+        var center = windowHeight / 1;
         var centerThreshold = center * 0.4;
 
         // Calculate the percentage of the element's center in the viewport

@@ -72,13 +72,13 @@
   }
 
   .call-button {
-    background-color: #faf6f0 !important;
+    background-color: #f1c145 !important;
     position: relative;
     top: 20;
   }
 
   .call-button:hover {
-    background-color: #D39E1B !important;
+    background-color: #e9e9e9 !important;
     transition: 1000ms;
   }
 
@@ -124,11 +124,11 @@
   }
 
   .intro-header {
-    color: goldenrod;
+    color: #f1c145;
   }
 
   .services-section {
-    background-color: #f0f0f0;
+    background-color: #e9e9e9;
   }
 
   .service-h1 {
@@ -147,7 +147,7 @@
   .bordered-button {
     padding: 20px 30px;
     position: relative;
-    background-color: #C0C0C0;
+    background-color: #f1c145;
     right: 10px;
     border: none;
     color: #000;
@@ -158,7 +158,7 @@
     position: relative;
     left: 10px;
     border: none;
-    color: goldenrod;
+    color: #f1c145;
     
   }
 
@@ -181,7 +181,7 @@
   .overlay {
     z-index: 1;
     position: relative;
-    background-color: #00000079;
+    background-color: #0000002d;
     color: #fff;
     height: 400px;
     width: 100%;
@@ -228,7 +228,7 @@
 
 
   .business-hours-section {
-    background-color: #C0C0C0;
+    background-image: url(background.png);
     height: 500px;
     display: flex;
     flex-direction: column;

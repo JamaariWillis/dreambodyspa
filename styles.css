@@ -154,11 +154,10 @@
   }
 
   .plain-button {
-    padding: 20px 30px;
     position: relative;
-    left: 10px;
     border: none;
-    color: #f1c145;
+    left: 10px;
+    color: #000000;
     
   }
 
@@ -179,9 +178,7 @@
   }
   
   .overlay {
-    z-index: 1;
     position: relative;
-    background-color: #0000002d;
     color: #fff;
     height: 400px;
     width: 100%;

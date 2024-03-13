@@ -58,7 +58,7 @@
 
   .service-box {
     padding: 70px 0px;
-    background-color: #f0f0f0;
+    background-color: #e9e9e9;
   }
 
   .welcome-content {
@@ -139,26 +139,34 @@
 
 
   .buttons {
+    display: flex;
     position: relative;
-    top: 50px;
-    padding-bottom: 70px;
+    top: 40px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .pad {
+    padding-bottom: 50px;
   }
 
   .bordered-button {
     padding: 20px 30px;
     position: relative;
     background-color: #f1c145;
-    right: 10px;
     border: none;
     color: #000;
+    cursor: pointer
   }
 
   .plain-button {
     position: relative;
-    left: 40px;
+    right: 20px;
     color: #000000;
+    cursor: pointer;
     
   }
+
 
   .results-section {
     height: 400px;
@@ -195,7 +203,6 @@
   }
   
   .overlay .result-p {
-    font-weight: lighter;
     line-height: 1.5;
   }
   

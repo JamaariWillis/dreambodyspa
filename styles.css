@@ -196,6 +196,7 @@
     padding: 15px 20px;
     background-color: #fff;
     border: none;
+    color: #000 !important;
   }
   
   .overlay {
@@ -203,11 +204,11 @@
     color: #fff;
     height: 400px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
-    align-items: flex-start; /* Align content to the left */
+    align-items: center; /* Align content to the left */
   }
   
   .overlay h1,
@@ -275,6 +276,27 @@
   text-decoration: none !important;
   color: #000;
   }
+
+.location-section {
+  height: 500px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("location.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location-div {
+  color: #fff;
+  background-color: #0000003d;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 
@@ -558,5 +580,39 @@
   .contact1 {
     color:#FFFFFF;
     text-decoration: none;
+  }
+
+  .location-section {
+    height: 700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("location.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0e0d0d;
+    background-size: contain;
+  }
+  
+  .location-div {
+    color: #fff;
+    background-color: #0000005d;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  
+    .footer {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      background-color: #0e0d0d;
+      color: #d3d1d1;
   }
 }

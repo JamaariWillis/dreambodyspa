@@ -139,14 +139,15 @@
   }
 
   .intro-header {
-    color: #f1c145;
+    color: #ffffff;
   }
 
 
   .service-h1 {
     padding-top: 10px;
     position: relative;
-    background-color: #f1c145;
+    color: #000000;
+    background-color: #eeeeee;
     padding-bottom: 10px;
 
   }
@@ -301,7 +302,7 @@
 
 
   .footer {
-    height: 70px;
+    height: 270px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -607,7 +608,7 @@
   
   
     .footer {
-      height: 70px;
+      height: 270px;
       display: flex;
       justify-content: center;
       flex-direction: column;

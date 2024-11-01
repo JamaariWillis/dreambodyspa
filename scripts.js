@@ -10,25 +10,39 @@
         }
     };
 
+
     (function (a) {
-        var b = {
-          businessId: '108503ee-d9f4-48f8-aaaa-69cb7ec3865b',
-        };
-      
-        var c = a.createElement('script');
-        var d = a.querySelector('script');
-      
-        c.src = 'https://static.joinboulevard.com/injector.min.js';
-        c.async = true;
-        c.onload = function () {
-          blvd.init(b);
-      
-          // Add the event listener for the "Book Now" button once the script is loaded
-          document.getElementById('book-now-button').addEventListener('click', function() {
+      var b = {
+        businessId: '108503ee-d9f4-48f8-aaaa-69cb7ec3865b',
+      };
+    
+      var c = a.createElement('script');
+      var d = a.querySelector('script');
+    
+      c.src = 'https://static.joinboulevard.com/injector.min.js';
+      c.async = true;
+      c.onload = function () {
+        blvd.init(b);
+    
+        // Ensure the blvd object is available before adding the event listener
+        document.getElementById('book-now-button').addEventListener('click', function() {
+          if (typeof blvd !== 'undefined' && typeof blvd.open === 'function') {
             blvd.open();
-          });
-        };
-      
-        d.parentNode.insertBefore(c, d);
-      })(document);
-      
+          } else {
+            console.error("Boulevard script not fully loaded.");
+          }
+        });
+      };
+    
+      d.parentNode.insertBefore(c, d);
+    })(document);
+    
+
+  // JavaScript for Hamburger Menu
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  
+  hamburger.onclick = function() {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+  };

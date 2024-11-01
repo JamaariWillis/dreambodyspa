@@ -162,6 +162,33 @@
     </footer>
 
     <script src="scripts.js"></script>
+     <!-- Boulevard Self-Booking overlay -->
+     <script>
+        (function (a) {
+          var b = {
+            businessId: '108503ee-d9f4-48f8-aaaa-69cb7ec3865b',
+          };
+      
+          var c = a.createElement('script');
+          var d = a.querySelector('script');
+      
+          c.src = 'https://static.joinboulevard.com/injector.min.js';
+          c.async = true;
+          c.onload = function () {
+            blvd.init(b);
+          };
+      
+          d.parentNode.insertBefore(c, d);
+        })(document);
+      </script>
+      <!-- End Boulevard Self-Booking overlay -->
+  
+      <!-- Script for Booking NavLink -->
+      <script>
+          document.getElementById('book-now-button').addEventListener('click', function () {
+              blvd.show();
+          });
+      </script>
 </body>
 
 </html>

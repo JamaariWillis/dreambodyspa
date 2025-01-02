@@ -6,13 +6,12 @@
   body {
     text-align: center;
     margin: 0;
-    margin-top: 50px;
     padding: 0;
     font-family: 'Lato';
   }
 
   /* Add styles for the sticky top bar */
-.sticky-top-bar {
+/*.sticky-top-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +24,7 @@
   font-weight: bold;
   z-index: 1000;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
+}*/
 
   .sticky-headers {
     position: fixed;
@@ -420,13 +419,12 @@
   body {
     text-align: center;
     margin: 0;
-    margin-top: 42px;
     padding: 0;
     font-family: 'Lato';
   }
 
   /* Add styles for the sticky top bar */
-.sticky-top-bar {
+/*.sticky-top-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -439,7 +437,7 @@
   font-weight: bold;
   z-index: 1000;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
+}*/
 
   /* Nav Bar */
   .container {

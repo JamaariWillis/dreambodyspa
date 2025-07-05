@@ -187,24 +187,39 @@ body {
       grid-template-columns: 1fr;
     }
   }
-  .cta-button {
-    background: black;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 30px;
+    }
+
+    .cta-button {
+      color: white;
+      background-color: black;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+
+  .cta-a {
     text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-block;
+    color: white;
   }
-  .cta-button:hover {
-    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-    outline: 2px solid #d4af37;
-  }
+    
+
+    .cta-button:hover {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      outline: 2px solid #d4af37;
+    }
   .sticky-cta {
     position: fixed;
     bottom: 0;

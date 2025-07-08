@@ -89,8 +89,9 @@
         <h2>Check out these incredible results 👇</h2>
         <div class="grid grid-4 fade-in">
           <img src="shape1.jpg" alt="Result 1">
-          <img src="shape4.jpg" alt="Before and After Cryoslimming Result 2">
-          <img src="shape5.jpeg" alt="Before and After Cryoslimming Result 3">
+          <img src="review3.png" alt="Result 2">
+          <img src="review-img.jpg" alt="Before and After Cryoslimming Result 3" class="review-img-fix">
+          <img src="shape5.jpeg" alt="Before and After Cryoslimming Result 4">
         </div>
       </section>
     
@@ -109,6 +110,19 @@
         </div>
         
       </section>
+
+      <section class="video-section section">
+  <h2>See the Experience in Action 🎥</h2>
+  <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+    Watch this short video to see what it's like to experience Cryoslimming and our luxury facial treatments.
+  </p>
+  <div class="responsive-video">
+  <video autoplay muted playsinline controls>
+    <source src="https://video-atl3-1.xx.fbcdn.net/v/t42.1790-2/515256648_1262088788925927_5348067705314828640_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hZMgzNq43XoQ7kNvwHRRMMc&_nc_oc=AdmXC_ivctp0DV8RD7jKlPCFfUXyC79vx80BVsB-CKqSqmvBhrVlzzStKVVM0Wibugx8MDJDLJVY6-3rcCGCGVN4&_nc_zt=28&_nc_ht=video-atl3-1.xx&_nc_gid=CGlJKhOzQfQzAx6NLg-lHQ&oh=00_AfSpoh2pCEHACCgzgSVB2dvyL-JuNlv1qRLaE2Tzf7ttNw&oe=687312A4" type="video/mp4">
+ Your Browser Does not Support Videos.
+  </video>
+</div>
+</section>
     
       <section class="faq-section section">
         <h2><strong>Frequently Asked Questions</strong></h2>
@@ -139,10 +153,6 @@
   
           <h3>Q8. How should I prepare?</h3>
           <p>A. Sessions are completely noninvasive with zero downtime. No special preparation is necessary! However, we recommend only drinking water and fasting prior to the same day as your session for the best results possible.</p>
-  
-          <h3>Q9. Who can NOT have this treatment?</h3>
-          <p>A. No body contouring or slimming (double chin or body) for pregnant or breastfeeding women. Additionally, it is recommended to schedule when you're out of your cycle to prevent bloating and get the best results possible.<br><br>
-          No Surgery in the last 6 months.</p>
         </div>
       </section>
       <footer class="section" style="text-align:center; font-size:14px; color:#888;">
@@ -200,6 +210,24 @@
       }
     
       updateTimer();
+
+      
+  function updateBookingButton() {
+    const buttons = document.querySelectorAll('.cta-button');
+    const isMobile = window.innerWidth <= 768; // Adjust breakpoint as needed
+
+    buttons.forEach(button => {
+      if (isMobile) {
+        button.setAttribute('onclick', 'javascript:blvd.openBookingWidget();');
+      } else {
+        button.setAttribute('onclick', "blvd.openBookingWidget({ urlParams: { locationId: '8be48c3f-be17-4bcb-8888-a537e6db4449', path: '/cart/menu/Promo/s_b55089e4-7630-400f-8223-16e86a5491d4', visitType: 'SELF_VISIT' }});");
+      }
+    });
+  }
+
+  window.addEventListener('load', updateBookingButton);
+  window.addEventListener('resize', updateBookingButton);
+
     </script>
     <script src="scripts.js"></script>
     </body>
